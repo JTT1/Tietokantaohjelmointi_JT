@@ -1,38 +1,57 @@
-.App {
+.footer {
+  position: relative;
+  margin-top: 200px;
+  background-color: #091534;
+  width: 100%;
+  height: 70px;
+  color: #FE9A76;
   text-align: center;
+  clear: both;
+  padding-top: 20px;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  background-color: #0247FE;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+td {
+  margin-right: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.tallennus {
+  border: 1px solid black;
+  border-radius: 15px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.paivitys {
+  border: 1px solid black;
+  border-top: none;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tietokanta {
+  text-align: center;
+  border: 1px solid black;
+  border-bottom: none;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding: 10px;
 }
+
+.testi {
+  display: none;
+}
+
+

@@ -1,24 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import {Switch,Route} from 'react-router-dom'
+import Home from './Home';
+import Footer from './Footer';
+import {useState} from 'react';
+import Update from './Update';
+
 
 function App() {
+
+  const [tyontekijat, setTyontekijat] = useState([]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Switch>
+      <div className="container">
+        <Route path="/" render={() => <Home setTyontekijat={setTyontekijat} tyontekijat={tyontekijat}/>} exact/>
+        <Route path="/update" render={() => <Update/>}></Route>
+      </div>
+      </Switch>
+    <Footer></Footer>
+    </>
   );
 }
 
